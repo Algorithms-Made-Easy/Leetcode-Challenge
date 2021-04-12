@@ -1,0 +1,35 @@
+class Solution {
+    public int[] constructArray(int n, int k) {
+        int[] result =new int[n];
+        
+        int high = n , low = 1;
+        int index = 0;
+        
+        result[index++] = low++;
+        
+        boolean isHigh = false;
+        
+        while(k>1){
+            result[index++] = high--;
+            k--;
+            isHigh = true;
+            if(k>1){
+                result[index++] = low++;
+                k--;
+                isHigh = false;
+            }
+        }
+        
+        //increasing or decreasing
+        while(index<n){
+            if(isHigh){
+                result[index++] = high--;
+            }
+            else{
+                result[index++] = low++;
+            }
+        }
+        
+        return result;
+    }
+}
