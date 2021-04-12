@@ -15,4 +15,4 @@ Day | Name of Problem | Leetcode Link | Video Link
 9 | Verifying an Alien Dictionary | https://leetcode.com/problems/verifying-an-alien-dictionary/ | https://youtu.be/jK5a8T9q4pc
 10 | Deepest Leaves Sum | https://leetcode.com/problems/deepest-leaves-sum/ | https://youtu.be/kgG2LuxzAHU
 11 | Longest Increasing Path in a Matrix | https://leetcode.com/problems/longest-increasing-path-in-a-matrix/ | https://youtu.be/WiEqhI7v2FY
-12 | Beautiful Arrangement II | https://leetcode.com/problems/beautiful-arrangement-ii/ | https://youtu.be/jK5a8T9q4pc
+12 | Beautiful Arrangement II | https://leetcode.com/problems/beautiful-arrangement-ii/ | https://youtu.be/BiQlqgmJ0BM
