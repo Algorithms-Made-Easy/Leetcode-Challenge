@@ -16,4 +16,4 @@ Day | Name of Problem | Leetcode Link | Video Link
 10 | Deepest Leaves Sum | https://leetcode.com/problems/deepest-leaves-sum/ | https://youtu.be/kgG2LuxzAHU
 11 | Longest Increasing Path in a Matrix | https://leetcode.com/problems/longest-increasing-path-in-a-matrix/ | https://youtu.be/WiEqhI7v2FY
 12 | Beautiful Arrangement II | https://leetcode.com/problems/beautiful-arrangement-ii/ | https://youtu.be/BiQlqgmJ0BM
-13 | Flatten Nested List Iterator | https://leetcode.com/problems/flatten-nested-list-iterator/ | https://youtu.be/BiQlqgmJ0BM
+13 | Flatten Nested List Iterator | https://leetcode.com/problems/flatten-nested-list-iterator/ | https://youtu.be/V-gPWPOyq8I
