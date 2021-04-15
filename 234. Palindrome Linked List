@@ -1,0 +1,55 @@
+class Solution {
+    public boolean isPalindrome(ListNode head) {
+        if(head == null || head.next == null) return true;
+        List<Integer> l = new ArrayList<>();
+        while(head != null){
+            l.add(head.val);
+            head = head.next;
+        }
+        int start = 0, end = l.size()-1;
+        while(start < end){
+            if(l.get(start) != l.get(end)) return false;
+            start++;end--;
+        }
+        return true;
+    }
+}
+
+class Solution {
+    public boolean isPalindrome(ListNode head) {
+        //Find Mid 
+        ListNode fast = head;
+        ListNode slow = head;
+        
+        while(fast.next != null && fast.next.next != null) {
+            slow = slow.next;
+            fast = fast.next.next;
+        }
+        
+        // 1, ||| 2.  ||||  3 --> slow = 2, fast = 3
+        if(fast != null) slow = slow.next;
+        
+        //Reverse the list start from slow. 
+        ListNode revHead = reverse(slow);
+        
+        while(revHead != null) {
+            if(revHead.val != head.val) return false;
+            else {
+                revHead = revHead.next;
+                head = head.next;
+            }
+        }
+        return true;
+    }
+    
+    public ListNode reverse(ListNode head) {
+        ListNode prev = null;
+        while(head != null) {
+            ListNode next = head.next;
+            head.next = prev;
+            prev = head;
+            head = next;
+        }
+        return prev;
+    }
+}
