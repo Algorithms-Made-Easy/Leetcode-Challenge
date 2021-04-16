@@ -19,3 +19,4 @@ Day | Name of Problem | Leetcode Link | Video Link | Code
 13 | Flatten Nested List Iterator | https://leetcode.com/problems/flatten-nested-list-iterator/ | https://youtu.be/V-gPWPOyq8I | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/341.%20Flatten%20Nested%20List%20Iterator
 14 | Partition List | https://leetcode.com/problems/partition-list/ | https://youtu.be/b4FeEwAGDtU | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/86.%20Partition%20List
 15 | Fibonacci Number | https://leetcode.com/problems/fibonacci-number/ | https://youtu.be/kIzjdvU_QIU | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/509.%20Fibonacci%20Number
+16 | Fibonacci Number | https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/ | https://youtu.be/RJpy4A7LJrs | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/1209.%20Remove%20All%20Adjacent%20Duplicates%20in%20String%20II
