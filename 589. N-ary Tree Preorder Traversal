@@ -7,7 +7,7 @@ class Solution {
     }
     
     public void preorderHelper(Node node) {
-        if(node.children == null) return;
+        if(node == null) return; //tree with single node case missing 
         result.add(node.val);
         for(Node child : node.children) {
             preorderHelper(child);
