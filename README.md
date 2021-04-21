@@ -23,3 +23,6 @@ Day | Name of Problem | Leetcode Link | Video Link | Code
 17 | Number of Submatrices That Sum to Target | https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/ | https://youtu.be/elADMOC_hDI | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/1074.%20Number%20of%20Submatrices%20That%20Sum%20to%20Target
 18 | Remove Nth Node From End of List | https://leetcode.com/problems/remove-nth-node-from-end-of-list/ | https://youtu.be/Kncuqqg_I18 | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/19.%20Remove%20Nth%20Node%20From%20End%20of%20List
 19 | Combination Sum IV | https://leetcode.com/problems/combination-sum-iv/ | https://youtu.be/GWqe_xfqxCA | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/377.%20Combination%20Sum%20IV
+20 | N-ary Tree Preorder Traversal | https://leetcode.com/problems/n-ary-tree-preorder-traversal/ | https://www.youtube.com/watch?v=DAIN1ZzvFeA&list=PLJtzaiEpVo2z9PpcJcsl5j3RXutiTU-GB&index=2 | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/589.%20N-ary%20Tree%20Preorder%20Traversal
+21 | Triangle | https://leetcode.com/problems/triangle/ | https://www.youtube.com/watch?v=O2eaAdBpZBQ&list=PLJtzaiEpVo2z9PpcJcsl5j3RXutiTU-GB&index=1 | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/120.%20Triangle
+
