@@ -25,4 +25,4 @@ Day | Name of Problem | Leetcode Link | Video Link | Code
 19 | Combination Sum IV | https://leetcode.com/problems/combination-sum-iv/ | https://youtu.be/GWqe_xfqxCA | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/377.%20Combination%20Sum%20IV
 20 | N-ary Tree Preorder Traversal | https://leetcode.com/problems/n-ary-tree-preorder-traversal/ | https://youtu.be/DAIN1ZzvFeA | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/589.%20N-ary%20Tree%20Preorder%20Traversal
 21 | Triangle | https://leetcode.com/problems/triangle/ | https://youtu.be/O2eaAdBpZBQ | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/120.%20Triangle
-22 | Triangle | https://leetcode.com/problems/brick-wall/ | https://youtu.be/s4pN9Qfj8EY | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/554.%20Brick%20Wall
+22 | Brick Wall | https://leetcode.com/problems/brick-wall/ | https://youtu.be/s4pN9Qfj8EY | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/554.%20Brick%20Wall
