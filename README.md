@@ -26,4 +26,5 @@ Day | Name of Problem | Leetcode Link | Video Link | Code
 20 | N-ary Tree Preorder Traversal | https://leetcode.com/problems/n-ary-tree-preorder-traversal/ | https://youtu.be/DAIN1ZzvFeA | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/589.%20N-ary%20Tree%20Preorder%20Traversal
 21 | Triangle | https://leetcode.com/problems/triangle/ | https://youtu.be/O2eaAdBpZBQ | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/120.%20Triangle
 22 | Brick Wall | https://leetcode.com/problems/brick-wall/ | https://youtu.be/s4pN9Qfj8EY | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/554.%20Brick%20Wall
+23 | Count Binary Substrings  | https://leetcode.com/problems/count-binary-substrings/ | https://youtu.be/MGPHPadxhtQ | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/696.%20Count%20Binary%20Substrings
 24 | Critical Connections in a Network | https://leetcode.com/problems/critical-connections-in-a-network/ | https://youtu.be/5xUdS0hclQ4 | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/1192.%20Critical%20Connections%20in%20a%20Network
