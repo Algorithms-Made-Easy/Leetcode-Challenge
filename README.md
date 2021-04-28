@@ -28,3 +28,7 @@ Day | Name of Problem | Leetcode Link | Video Link | Code
 22 | Brick Wall | https://leetcode.com/problems/brick-wall/ | https://youtu.be/s4pN9Qfj8EY | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/554.%20Brick%20Wall
 23 | Count Binary Substrings  | https://leetcode.com/problems/count-binary-substrings/ | https://youtu.be/MGPHPadxhtQ | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/696.%20Count%20Binary%20Substrings
 24 | Critical Connections in a Network | https://leetcode.com/problems/critical-connections-in-a-network/ | https://youtu.be/5xUdS0hclQ4 | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/1192.%20Critical%20Connections%20in%20a%20Network
+25 | Rotate Image | https://leetcode.com/problems/rotate-image/ | https://youtu.be/bW_9pjcXP_4 | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/48.%20Rotate%20Image
+26 | Furthest Building You Can Reach | https://leetcode.com/problems/furthest-building-you-can-reach/ | https://youtu.be/wAxhnUhXvHE | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/1642.%20Furthest%20Building%20You%20Can%20Reach
+27 | Power of Three | https://leetcode.com/problems/power-of-three/ | https://youtu.be/GNb8vSyw-WE | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/326.%20Power%20of%20Three
+28 | Unique Paths II | https://leetcode.com/problems/unique-paths-ii/ | https://youtu.be/nZSXWXzn1aM | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/63.%20Unique%20Paths%20II
