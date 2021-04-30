@@ -1,0 +1,35 @@
+class Solution {
+    public List<Integer> powerfulIntegers(int x, int y, int bound) {
+        List<Integer> px = new ArrayList<>();
+        List<Integer> py = new ArrayList<>();
+        int powx = x,  powy = y;
+        px.add(1);
+        py.add(1);
+        //logx
+        if(x != 1) {
+            //Calculate powers of x until < bound
+            while(powx < bound) {
+                px.add(powx);
+                powx = powx*x;
+            }
+        }
+        //logy
+        if(y != 1) {
+            //Calculate powers of y until < bound
+            while(powy < bound) {
+                py.add(powy);
+                powy = powy*y;
+            }
+        }
+        
+        Set<Integer> result = new HashSet<>();
+        //logx * logy
+        for(int i : px) {
+            for(int j : py) {
+                if((i+j) <= bound) result.add(i+j);
+            }
+        }
+        
+        return result.stream().collect(Collectors.toList());
+    }
+}
