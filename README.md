@@ -34,3 +34,9 @@ Day | Name of Problem | Leetcode Link | Video Link | Code
 28 | Unique Paths II | https://leetcode.com/problems/unique-paths-ii/ | https://youtu.be/nZSXWXzn1aM | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/63.%20Unique%20Paths%20II
 29 | Find First and Last Position of Element in Sorted Array | https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/ | https://youtu.be/c_HH9sakxpY | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/34.%20Find%20First%20and%20Last%20Position%20of%20Element%20in%20Sorted%20Array
 30 | Powerful Integers | https://leetcode.com/problems/powerful-integers/ | https://youtu.be/dkvMSZ1tRXo | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/970.%20Powerful%20Integers
+
+# May Leetcoding Challenge 2021
+
+Day | Name of Problem | Leetcode Link | Video Link | Code
+--- | :---: | --- | --- | ---
+1 | Prefix and Suffix Search | https://leetcode.com/problems/prefix-and-suffix-search/ | https://youtu.be/U7fIQ7qAeuE | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/745.%20Prefix%20and%20Suffix%20Search
