@@ -40,3 +40,4 @@ Day | Name of Problem | Leetcode Link | Video Link | Code
 Day | Name of Problem | Leetcode Link | Video Link | Code
 --- | :---: | --- | --- | ---
 1 | Prefix and Suffix Search | https://leetcode.com/problems/prefix-and-suffix-search/ | https://youtu.be/U7fIQ7qAeuE | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/745.%20Prefix%20and%20Suffix%20Search
+2 | Course Schedule III | https://leetcode.com/problems/course-schedule-iii/ | https://youtu.be/ey8FxYsFAMU | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/630.%20Course%20Schedule%20III
