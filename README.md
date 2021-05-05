@@ -8,6 +8,7 @@ Day | Name of Problem | Leetcode Link | Video Link | Code
 2 | Course Schedule III | https://leetcode.com/problems/course-schedule-iii/ | https://youtu.be/ey8FxYsFAMU | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/630.%20Course%20Schedule%20III
 3 | Running Sum of 1d Array | https://leetcode.com/problems/running-sum-of-1d-array/ | https://youtu.be/3uMmKCZ_9Go | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/1480.%20Running%20Sum%20of%201d%20Array
 4 | Non-decreasing Array | https://leetcode.com/problems/non-decreasing-array/ | https://youtu.be/iL7oSNc3OXA | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/665.%20Non-decreasing%20Array
+5 | Non-decreasing Array | https://leetcode.com/problems/jump-game-ii/ | https://youtu.be/BRnRPLNGWIo | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/45.%20Jump%20Game%20II
 
 # April Leetcoding Challenge 2021
 
