@@ -11,6 +11,9 @@ Day | Name of Problem | Leetcode Link | Video Link | Code
 5 | Jump Game II | https://leetcode.com/problems/jump-game-ii/ | https://youtu.be/BRnRPLNGWIo | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/45.%20Jump%20Game%20II
 6 | Convert Sorted List to BST | https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/ | https://youtu.be/5IQF13nNq6A | https://github.com/Algorithms-Made-Easy/Tree/blob/master/Convert-Sorted-List-to-Binary-Search-Tree
 7 | Delete Operation for Two Strings | https://leetcode.com/problems/delete-operation-for-two-strings/ | https://youtu.be/VSrsUkoG0bk | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/583.%20Delete%20Operation%20for%20Two%20Strings
+8 | Super Palindromes | https://leetcode.com/problems/super-palindromes/ | https://youtu.be/iZ_wJbrlJz0 | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/906.%20Super%20Palindromes
+
+
 
 # April Leetcoding Challenge 2021
 
