@@ -1,0 +1,55 @@
+class Solution {
+    public int superpalindromesInRange(String left, String right) {
+        
+        long l = Long.valueOf(left);
+        long r = Long.valueOf(right);
+        int count = 0;
+        
+        //Create the palindromes in range 1, 100000
+        //Even Palindromes
+        for(int i = 1; i < 100000; i++) {
+            StringBuilder sb = new StringBuilder(Integer.toString(i));
+            for(int j = sb.length()-1; j >= 0; j--) {
+                sb.append(sb.charAt(j));
+            }
+            
+            //Palindrome in sb
+            long n = Long.valueOf(sb.toString());
+            n*=n;
+            //Check if n is a super palindrome --> Find whether it is palindrome
+            if(n > r) break;
+            else if(n>=l && isPalindrome(n)) count++;
+        }
+        
+        //Odd Palindromes
+        for(int i = 1; i < 100000; i++) {
+            StringBuilder sb = new StringBuilder(Integer.toString(i));
+            for(int j = sb.length()-2; j >= 0; j--) {
+                sb.append(sb.charAt(j));
+            }
+            
+            //Palindrome in sb
+            long n = Long.valueOf(sb.toString());
+            n*=n;
+            //Check if n is a super palindrome --> Find whether it is palindrome
+            if(n > r) break;
+            else if(n>=l && isPalindrome(n)) count++;
+        }
+        
+        return count;
+        
+    }
+    
+    public boolean isPalindrome(long n) {
+        return n == reverse(n);
+    }
+    
+    public long reverse(long n) {
+        long rev = 0;
+        while(n > 0) {
+            rev = rev*10 + n%10;
+            n/=10;
+        }
+        return rev;
+    }
+}
