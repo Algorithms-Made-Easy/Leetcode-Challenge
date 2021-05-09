@@ -12,7 +12,7 @@ Day | Name of Problem | Leetcode Link | Video Link | Code
 6 | Convert Sorted List to BST | https://leetcode.com/problems/convert-sorted-list-to-binary-search-tree/ | https://youtu.be/5IQF13nNq6A | https://github.com/Algorithms-Made-Easy/Tree/blob/master/Convert-Sorted-List-to-Binary-Search-Tree
 7 | Delete Operation for Two Strings | https://leetcode.com/problems/delete-operation-for-two-strings/ | https://youtu.be/VSrsUkoG0bk | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/583.%20Delete%20Operation%20for%20Two%20Strings
 8 | Super Palindromes | https://leetcode.com/problems/super-palindromes/ | https://youtu.be/iZ_wJbrlJz0 | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/906.%20Super%20Palindromes
-
+9 | Construct Target Array With Multiple Sums | https://leetcode.com/problems/construct-target-array-with-multiple-sums/ | https://youtu.be/h9t7JF50Mpw | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/1354.%20Construct%20Target%20Array%20With%20Multiple%20Sums
 
 
 # April Leetcoding Challenge 2021
