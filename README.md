@@ -14,7 +14,7 @@ Day | Name of Problem | Leetcode Link | Video Link | Code
 8 | Super Palindromes | https://leetcode.com/problems/super-palindromes/ | https://youtu.be/iZ_wJbrlJz0 | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/906.%20Super%20Palindromes
 9 | Construct Target Array With Multiple Sums | https://leetcode.com/problems/construct-target-array-with-multiple-sums/ | https://youtu.be/h9t7JF50Mpw | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/1354.%20Construct%20Target%20Array%20With%20Multiple%20Sums
 10 | Count Primes | https://leetcode.com/problems/count-primes/ | https://youtu.be/5LMkddl2NCk | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/204.%20Count%20Primes
-
+11 | Maximum Points You Can Obtain from Cards | https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/ | https://youtu.be/U0utLw_vWGM | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/1423.%20Maximum%20Points%20You%20Can%20Obtain%20from%20Cards
 
 # April Leetcoding Challenge 2021
 
