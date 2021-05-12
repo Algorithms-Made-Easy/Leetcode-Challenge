@@ -15,6 +15,7 @@ Day | Name of Problem | Leetcode Link | Video Link | Code
 9 | Construct Target Array With Multiple Sums | https://leetcode.com/problems/construct-target-array-with-multiple-sums/ | https://youtu.be/h9t7JF50Mpw | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/1354.%20Construct%20Target%20Array%20With%20Multiple%20Sums
 10 | Count Primes | https://leetcode.com/problems/count-primes/ | https://youtu.be/5LMkddl2NCk | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/204.%20Count%20Primes
 11 | Maximum Points You Can Obtain from Cards | https://leetcode.com/problems/maximum-points-you-can-obtain-from-cards/ | https://youtu.be/U0utLw_vWGM | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/1423.%20Maximum%20Points%20You%20Can%20Obtain%20from%20Cards
+12 | Range Sum Query 2D - Immutable | https://leetcode.com/problems/range-sum-query-2d-immutable/ | https://youtu.be/rkLDDxOcJxU | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/304.%20Range%20Sum%20Query%202D%20-%20Immutable
 
 # April Leetcoding Challenge 2021
 
