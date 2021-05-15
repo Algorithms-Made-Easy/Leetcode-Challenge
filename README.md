@@ -18,6 +18,7 @@ Day | Name of Problem | Leetcode Link | Video Link | Code
 12 | Range Sum Query 2D - Immutable | https://leetcode.com/problems/range-sum-query-2d-immutable/ | https://youtu.be/rkLDDxOcJxU | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/304.%20Range%20Sum%20Query%202D%20-%20Immutable
 13 | Ambiguous Coordinates | https://leetcode.com/problems/ambiguous-coordinates/ | https://youtu.be/rt-lJS5nlOQ | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/816.%20Ambiguous%20Coordinates
 14 | Flatten Binary Tree to Linked List | https://leetcode.com/problems/flatten-binary-tree-to-linked-list/ | https://youtu.be/NOKVBiJwkD0 | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/114.%20Flatten%20Binary%20Tree%20to%20Linked%20List
+15 | Valid Number | https://leetcode.com/problems/valid-number/ | https://youtu.be/0qac3ngAZmE | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/65.%20Valid%20Number
 
 # April Leetcoding Challenge 2021
 
