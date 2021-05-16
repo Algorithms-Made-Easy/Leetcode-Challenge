@@ -1,0 +1,59 @@
+class Solution {
+    int cam;
+    Set<TreeNode> covered;
+    public int minCameraCover(TreeNode root) {
+        if(root == null) return 0;
+        cam = 0;
+        covered = new HashSet<>();
+        covered.add(null); // Skip the leaf nodes and start from one level above.
+        dfs(root, null);
+        return cam;
+    }
+    
+    public void dfs(TreeNode node, TreeNode parent){
+        if(node != null) {
+            dfs(node.left, node);
+            dfs(node.right, node);
+            
+            //Check if i need to add camera at node. 
+            // Parent is null & node is uncovered 
+            // OR 
+            // if any of its left or right child are not covered
+            
+            if(parent == null && !covered.contains(node)
+               || !covered.contains(node.left) || !covered.contains(node.right)) {
+                cam++;
+                covered.add(node);
+                covered.add(parent);
+                covered.add(node.left);
+                covered.add(node.right);
+            }
+            
+        }
+    }
+}
+
+class Solution {
+    int cam = 0;
+    public int minCameraCover(TreeNode root) {
+        // (0) -> cam + 1 ,(1,2) --> cam
+        return dfs(root)==0 ? cam+1 : cam;
+    }
+    
+    // 2 --> Has Camera
+    // 1 -> Covered with the camera
+    // 0 --> No camera is covering this node
+    public int dfs(TreeNode node) {
+        if(node == null) return 1;
+        int left = dfs(node.left);
+        int right = dfs(node.right);
+        //Check if we need to add a camera
+        if(left == 0 || right == 0) {
+            cam++;
+            return 2;
+        }
+        else if(left == 2 || right == 2) return 1;
+        else return 0;
+        
+    }
+}
