@@ -1,0 +1,36 @@
+class Solution {
+    public int minMoves2(int[] nums) {
+        int n = nums.length;
+        //Sort the array
+        Arrays.sort(nums);
+        
+        //Find the median
+        int median = n%2==0 ? (nums[n/2]+nums[n/2-1])/2 : nums[n/2];
+        int steps = 0;
+        
+        //Calculate steps
+        for(int num : nums) {
+            steps += Math.abs(num-median);
+        }
+        
+        return steps;
+    }
+}
+
+class Solution {
+    public int minMoves2(int[] nums) {
+        //Sort the array
+        Arrays.sort(nums);
+        
+        //Calculate the steps by taking 2 pointers
+        int i = 0, j = nums.length-1;
+        int steps = 0;
+        while(i < j) {
+            steps += (nums[j]-nums[i]);
+            i++;
+            j--;
+        }
+        
+        return steps;
+    }
+}
