@@ -24,6 +24,7 @@ Day | Name of Problem | Leetcode Link | Video Link | Code
 18 | Find Duplicate File in System | https://leetcode.com/problems/find-duplicate-file-in-system/ |https://youtu.be/4KGl6PMwVXE| https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/609.%20Find%20Duplicate%20File%20in%20System
 19 | Minimum Moves to Equal Array Elements II | https://leetcode.com/problems/minimum-moves-to-equal-array-elements-ii/ | https://youtu.be/FGgL5QxZLno | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/462.%20Minimum%20Moves%20to%20Equal%20Array%20Elements%20II
 20 | Binary Tree Level Order Traversal | https://leetcode.com/problems/binary-tree-level-order-traversal/ | https://youtu.be/vQrggrFMyp8 | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/102.%20Binary%20Tree%20Level%20Order%20Traversal
+21 | Find and Replace Pattern | https://leetcode.com/problems/find-and-replace-pattern/ | https://youtu.be/JbiV9l5AHQE | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/890.%20Find%20and%20Replace%20Pattern
 
 # April Leetcoding Challenge 2021
 
