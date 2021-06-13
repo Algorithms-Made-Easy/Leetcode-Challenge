@@ -1,5 +1,11 @@
 # Leetcode-Challenge
 
+# June Leetcoding Challenge 2021
+
+Day | Name of Problem | Leetcode Link | Video Link | Code
+--- | :---: | --- | --- | ---
+12 | Minimum Number of Refueling Stops | https://leetcode.com/problems/minimum-number-of-refueling-stops/ | https://youtu.be/4RgqAQFr9WQ | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/871.%20Minimum%20Number%20of%20Refueling%20Stops
+
 # May Leetcoding Challenge 2021
 
 Day | Name of Problem | Leetcode Link | Video Link | Code
