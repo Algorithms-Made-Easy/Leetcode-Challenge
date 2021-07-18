@@ -1,5 +1,11 @@
 # Leetcode-Challenge
 
+# July Leetcoding Challenge 2021
+
+Day | Name of Problem | Leetcode Link | Video Link | Code
+--- | :---: | --- | --- | ---
+18 | Reverse Nodes in k-Group | https://leetcode.com/problems/reverse-nodes-in-k-group/ | https://youtu.be/FYsYAELWyRs | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/25.%20Reverse%20Nodes%20in%20k-Group
+
 # June Leetcoding Challenge 2021
 
 Day | Name of Problem | Leetcode Link | Video Link | Code
