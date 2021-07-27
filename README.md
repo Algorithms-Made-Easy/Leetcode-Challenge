@@ -5,6 +5,7 @@
 Day | Name of Problem | Leetcode Link | Video Link | Code
 --- | :---: | --- | --- | ---
 18 | Reverse Nodes in k-Group | https://leetcode.com/problems/reverse-nodes-in-k-group/ | https://youtu.be/FYsYAELWyRs | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/25.%20Reverse%20Nodes%20in%20k-Group
+26 | Non-negative Integers without Consecutive Ones | https://leetcode.com/problems/non-negative-integers-without-consecutive-ones/ | https://youtu.be/Pdeje3QH8G8 | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/600.%20Non-negative%20Integers%20without%20Consecutive%20Ones
 
 # June Leetcoding Challenge 2021
 
