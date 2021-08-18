@@ -1,0 +1,103 @@
+class Solution {
+    public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
+        //If t1 == NULL -> t2
+        //If t2 == NULL -> t2
+        // Sum (t1,t2)
+        
+        //Preorder Traversal (P -> L -> R)
+        if(t1 == null) return t2;
+        if(t2 == null) return t1;
+        t1.val+=t2.val;
+        t1.left = mergeTrees(t1.left, t2.left);
+        t1.right = mergeTrees(t1.right, t2.right);
+        return t1;
+    }
+}
+
+
+
+class Solution {
+    public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
+        //If t1 == NULL -> t2
+        //If t2 == NULL -> t2
+        // Sum (t1,t2)
+        
+        if(t1 == null) return t2;
+        if(t2 == null) return t1;
+        
+        Stack<TreeNode[]> st = new Stack<>();
+        st.push(new TreeNode[]{t1,t2});
+        
+        //While is not empty process the nodes
+        while(!st.isEmpty()) {
+            TreeNode[] curr = st.pop();
+            
+            //Process the node
+           curr[0].val+=curr[1].val;
+            
+            //1. curr[0] = null, curr[1] != null -> curr[1]
+            //2. curr[1] = null, curr[0] != null -> curr[0]
+            //3. both not null, add it stack 
+            
+            //Left Tree
+            if(curr[0].left == null) {
+                curr[0].left = curr[1].left;
+            }
+            else if(curr[1].left != null) {
+                st.push(new TreeNode[]{curr[0].left, curr[1].left});
+            }
+            
+            //Right Tree
+            if(curr[0].right == null) {
+                curr[0].right = curr[1].right;
+            }
+            else if(curr[1].right != null) {
+                st.push(new TreeNode[]{curr[0].right, curr[1].right});
+            }
+        }
+        return t1;
+    }
+}
+
+
+class Solution {
+    public TreeNode mergeTrees(TreeNode t1, TreeNode t2) {
+        //If t1 == NULL -> t2
+        //If t2 == NULL -> t2
+        // Sum (t1,t2)
+        
+        if(t1 == null) return t2;
+        if(t2 == null) return t1;
+        
+        Queue<TreeNode[]> q = new LinkedList<>();
+        q.add(new TreeNode[]{t1,t2});
+        
+        //While is not empty process the nodes
+        while(!q.isEmpty()) {
+            TreeNode[] curr = q.remove();
+            if(curr[1] != null) {
+                curr[0].val+=curr[1].val;
+                
+                //1. curr[0] = null -> curr[1]
+                //2. curr[0] = null ->, add it queue 
+
+                //Left Tree
+                if(curr[0].left == null) {
+                    curr[0].left = curr[1].left;
+                }
+                else {
+                    q.add(new TreeNode[]{curr[0].left, curr[1].left});
+                }
+
+                //Right Tree
+                if(curr[0].right == null) {
+                    curr[0].right = curr[1].right;
+                }
+                else {
+                    q.add(new TreeNode[]{curr[0].right, curr[1].right});
+                }
+            }
+        }
+        return t1;
+    }
+}
