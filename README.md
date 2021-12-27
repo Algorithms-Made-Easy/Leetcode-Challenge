@@ -1,3 +1,9 @@
+# LeetCode Problems
+
+Number | Name of Problem | Leetcode Link | Video Link | Code
+--- | :---: | --- | --- | ---
+55 | Jump Game | https://leetcode.com/problems/jump-game/ | https://youtu.be/C6AZyfj-Kyw | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/55.%20Jump%20Game
+
 # Leetcode-Challenge
 
 # July Leetcoding Challenge 2021
