@@ -1,0 +1,68 @@
+TC: O(NLogK)
+SC: O(K)
+
+class Solution {
+    public int maxResult(int[] nums, int k) {
+        /**
+        For every index starting from 1: --- n 
+            Find out the max sum from all { i -1 } to  { i –k } index -- klogk
+            sum[index] = value[index] + maxfound
+        Result is sum[length -1]
+
+        */
+        
+        int n = nums.length;
+        int max = nums[0];
+        
+        // index --- maxSum
+        PriorityQueue<int[]> pq = new PriorityQueue<>((a,b) -> b[1]-a[1]);
+        
+        pq.offer(new int[]{0,nums[0]});
+        
+        for(int i=1;i<n;i++){
+            
+            while(i-pq.peek()[0]>k){
+                pq.poll();
+            }
+            
+            int[] top = pq.peek();
+            
+            max = nums[i] + top[1];
+            
+            pq.offer(new int[]{i,max});
+            
+        }
+        
+        return max;
+    }
+}
+
+TC: O(N)
+SC: O(K)
+
+class Solution {
+    public int maxResult(int[] nums, int k) {
+        int n = nums.length;
+        
+        Deque<Integer> dq = new ArrayDeque<>();
+        
+        dq.offerLast(0);
+        
+        for(int i=1;i<n;i++){
+            
+            nums[i] = nums[i] + nums[dq.peekFirst()];
+            
+            while(!dq.isEmpty() && nums[i]>=nums[dq.peekLast()]){
+                dq.pollLast();
+            }
+            
+            dq.offerLast(i);
+            
+            if(i - dq.peekFirst() >=k){
+                dq.pollFirst();
+            }
+            
+        }
+        return nums[n-1];
+    }
+}
