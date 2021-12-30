@@ -5,7 +5,7 @@ Number | Name of Problem | Leetcode Link | Video Link | Code
 55 | Jump Game | https://leetcode.com/problems/jump-game/ | https://youtu.be/C6AZyfj-Kyw | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/55.%20Jump%20Game
 1340 | Jump Game V | https://leetcode.com/problems/jump-game-v/ | https://youtu.be/pQXbujZLTv0 | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/1340.%20Jump%20Game%20V
 1696 | Jump Game VI | https://leetcode.com/problems/jump-game-vi/ | https://youtu.be/LiEcBMK5PQs | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/1696.%20Jump%20Game%20VI
-1871 | Jump Game VII | https://leetcode.com/problems/jump-game-vii/ |  | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/1871.%20Jump%20Game%20VII
+1871 | Jump Game VII | https://leetcode.com/problems/jump-game-vii/ | https://youtu.be/bZxWLuiqHes | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/1871.%20Jump%20Game%20VII
 
 
 # Leetcode-Challenge
