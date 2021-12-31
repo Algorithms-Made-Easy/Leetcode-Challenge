@@ -1,0 +1,83 @@
+class Solution {
+    boolean[][] dp;
+    public boolean canCross(int[] stones) {
+        
+        if(stones[1]!=1) return false;
+        
+        int n = stones.length;
+        dp = new boolean[n][n];
+        return helper(stones,0,1);
+    }
+    
+    boolean helper(int[] stones,int lastIndex,int currentIndex){
+        if(currentIndex == stones.length - 1){
+            return true;
+        }
+        
+        if(dp[lastIndex][currentIndex]) return false;
+        
+        int lastJump = stones[currentIndex] - stones[lastIndex];
+        
+        int nextIndex = currentIndex + 1;
+        
+        while(nextIndex<stones.length && stones[nextIndex]<= stones[currentIndex] + lastJump + 1){
+            int nextJump = stones[nextIndex] - stones[currentIndex];
+            int jump = nextJump - lastJump;
+            
+            if(jump>=-1 && jump<=1){
+                if(helper(stones,currentIndex,nextIndex)){
+                    return true;
+                }
+            }
+            nextIndex++;
+        }
+        
+        dp[lastIndex][currentIndex] = true;
+        
+        return false;
+    }
+}
+
+
+class Solution {
+    Map<String,Boolean> dp =null;
+    public boolean canCross(int[] stones) {
+        if(stones[1]!=1) return false;
+        dp = new HashMap<>();
+        return helper(stones,1,1);
+    }
+    
+    boolean helper(int[] stones, int index,int jump){
+        if(index == stones.length - 1){
+                return true;
+            }
+        if(dp.containsKey(index+"-"+jump)) return dp.get(index+"-"+jump);
+        boolean ans = false;
+        for(int j = Math.max(1,jump - 1); j<=jump+1;j++){
+            if(j==0) continue;
+            int newStone = stones[index] + j;
+            int indexNew = exists(stones,newStone);
+            if(indexNew!=-1){
+                ans |= helper(stones,indexNew,j);
+            }
+        }
+        
+        dp.put(index+"-"+jump,ans);
+        
+        return ans;
+    }
+    
+    int exists(int[] stone,int target){
+        int left=0,right = stone.length-1;
+        while(left<=right){
+            int mid = left + (right - left)/2;
+            if(stone[mid]==target) {
+                return mid;
+            }
+            else if(stone[mid]>target) right = mid-1;
+            else left = mid+1;
+        }
+        
+        return -1;
+    }
+}
