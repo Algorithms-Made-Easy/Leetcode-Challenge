@@ -1,0 +1,64 @@
+class Solution {
+    public int maxProfit(int[] prices) {
+        
+        int n = prices.length;
+        
+        if(n==0) return 0;
+        
+        int[] left = new int[n];
+        int[] right = new int[n];
+        
+        //Bidirectional DP Logic
+        //Left to right traversal
+        int min = prices[0];
+        for(int i = 1; i < n; i++) {
+            //1. Update Buy price
+            if(prices[i] < min) min=prices[i];
+            //2. Calculate current profit
+            int profit = prices[i]-min;
+            //3. Fill left array (based on condition)
+            left[i] = Math.max(left[i-1], profit);
+        }
+        
+        
+        //Right to left traversal
+        int max = prices[n-1];
+        for(int i = n-2; i>=0; i--) {
+            //1. Update Sell price
+            if(prices[i] > max) max=prices[i];
+            //2. Calculate current profit
+            int profit = max-prices[i];
+            //3. Update right array
+            right[i] = Math.max(right[i+1], profit);
+        }
+        
+        int maxProfit = 0;
+        for(int i = 0; i<n; i++) {
+            maxProfit = Math.max(maxProfit, left[i]+right[i]);
+        }
+        
+        return maxProfit;
+    }
+}
+
+
+class Solution {
+    public int maxProfit(int[] prices) {
+        
+        // c1, c2, p1, p2
+        int c1 = Integer.MAX_VALUE;
+        int c2 = Integer.MAX_VALUE;
+        int p1 = 0;
+        int p2 = 0;
+        
+       //Iterate over prices
+        for(int price : prices) {
+            c1 = Math.min(c1, price);
+            p1 = Math.max(p1, price-c1);
+            c2 = Math.min(c2, price-p1);
+            p2 = Math.max(p2, price-c2);
+        }
+    
+        return p2;
+    }
+}
