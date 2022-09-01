@@ -1,0 +1,30 @@
+class Solution {
+    public String smallestNumber(String pattern) {
+        int size = pattern.length();
+        int[] ans = new int[size+1];
+        for(int i=0;i<size+1;i++){
+            ans[i]=i+1;
+        }
+        
+        for(int i=0;i<size;i++){
+            int t=i;
+            while(t<size && pattern.charAt(t)=='D'){
+                t++;
+            }
+            
+            int left=i,right=t;
+            while(left<right){
+                int temp = ans[left];
+                ans[left]=ans[right];
+                ans[right]=temp;
+                left++;
+                right--;
+            }
+            
+            if(t!=i) i = t-1;
+            
+        }
+        
+        return Arrays.toString(ans).replaceAll("\\[|\\]|,|\\s", "");
+    }
+}
