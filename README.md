@@ -12,6 +12,7 @@ Number | Name of Problem | Leetcode Link | Video Link | Code
 1510 | Stone Game IV | https://leetcode.com/problems/stone-game-iv/ | https://youtu.be/Gcg_a3r8FA0 | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/1510.%20Stone%20Game%20IV
 1696 | Jump Game VI | https://leetcode.com/problems/jump-game-vi/ | https://youtu.be/LiEcBMK5PQs | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/1696.%20Jump%20Game%20VI
 1871 | Jump Game VII | https://leetcode.com/problems/jump-game-vii/ | https://youtu.be/bZxWLuiqHes | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/1871.%20Jump%20Game%20VII
+2375 | Construct Smallest Number From DI String | https://leetcode.com/problems/construct-smallest-number-from-di-string/ | https://youtu.be/GEqSg0Otq4Y | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/2375.%20Construct%20Smallest%20Number%20From%20DI%20String
 
 
 # Leetcode-Challenge
