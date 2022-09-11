@@ -1,0 +1,29 @@
+class Solution {
+    public int maxPerformance(int n, int[] s, int[] e, int k) {
+        
+        long MOD = 1_000_000_007;
+        int[][] pair = new int[n][2];
+        for(int i = 0; i < n; i++) {
+            pair[i][0] = e[i];
+            pair[i][1] = s[i];
+        }
+        
+        Arrays.sort(pair, (a,b) -> b[0]-a[0]);
+        
+        PriorityQueue<Integer> speed = new PriorityQueue<>();
+        
+        long speedSum = 0, maxPerformance = 0;
+        
+        for(int[] p : pair) {
+            speedSum+=p[1];
+            speed.offer(p[1]);
+            if(speed.size() > k) {
+                speedSum-=speed.poll();
+            }
+            maxPerformance = Math.max(maxPerformance, speedSum*p[0]);
+        }
+        
+        return (int)(maxPerformance%MOD);
+        
+    }
+}
