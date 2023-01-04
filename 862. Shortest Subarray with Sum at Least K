@@ -2,26 +2,31 @@
 //SC: O(N)
 class Solution {
     public int shortestSubarray(int[] nums, int k) {
-        int n = nums.length;
+        int length = nums.length;
         long sum=0;
-        int res=Integer.MAX_VALUE;
+        int res = Integer.MAX_VALUE;
+
         TreeMap<Long,Integer> map = new TreeMap<>();
-        for(int i=0;i<n;i++){
+
+        for(int i=0;i<length;i++){
             if(nums[i]>=k) return 1;
             sum+=nums[i];
             if(sum>=k){
-                res = Math.min(res,i+1);
+                res = Math.min(res,i + 1);
             }
-            long v = sum-k;
-            Map.Entry<Long,Integer> key = map.floorEntry(v);
-            while(key!=null){
-                int in = key.getValue();
-                res = Math.min(res,i-in);
-                map.remove(key.getKey());
-                key = map.floorEntry(key.getKey()-1);
+
+            long remainingSum = sum - k;
+            Map.Entry<Long,Integer> entry = map.floorEntry(remainingSum);
+            while(entry!=null){
+                int index = entry.getValue();
+                res = Math.min(res,i - index);
+                map.remove(entry.getKey());
+                entry = map.floorEntry(entry.getKey()-1);
             }
             map.put(sum,i);
+            
         }
+
         return res==Integer.MAX_VALUE?-1:res;
     }
 }
@@ -31,21 +36,28 @@ class Solution {
 class Solution {
     public int shortestSubarray(int[] nums, int k) {
         int n = nums.length;
-        int res=Integer.MAX_VALUE;
+        long sum=0;
+        int res = Integer.MAX_VALUE;
+
         long[] prefix = new long[n+1];
         for(int i=0;i<n;i++){
             prefix[i+1] = prefix[i] + nums[i];
         }
+
         Deque<Integer> dq = new ArrayDeque<>();
         for(int i=0;i<n+1;i++){
-           while(!dq.isEmpty() && (prefix[i]-prefix[dq.peekFirst()]) >= k){
-               res = Math.min(res,i-dq.pollFirst());
-           }
-           while(!dq.isEmpty() && prefix[i]<=prefix[dq.peekLast()]){
-               dq.pollLast();
-           }
-           dq.add(i);
+            //if sum at index i - sum at index at start of dq > =k we remove the start index at dq
+            while(!dq.isEmpty() && (prefix[i] - prefix[dq.peekFirst()]) >=k){
+                res = Math.min(res,i-dq.pollFirst());
+            }    
+
+            //if sum at last in dq >= current sum, we remove the last values from dq
+            while(!dq.isEmpty() && prefix[dq.peekLast()]>=prefix[i]){
+                dq.pollLast();
+            }
+            dq.add(i);
         }
+
         return res==Integer.MAX_VALUE?-1:res;
     }
 }
