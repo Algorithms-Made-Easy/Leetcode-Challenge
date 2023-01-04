@@ -1,0 +1,51 @@
+//TC: O(NlogN)
+//SC: O(N)
+class Solution {
+    public int shortestSubarray(int[] nums, int k) {
+        int n = nums.length;
+        long sum=0;
+        int res=Integer.MAX_VALUE;
+        TreeMap<Long,Integer> map = new TreeMap<>();
+        for(int i=0;i<n;i++){
+            if(nums[i]>=k) return 1;
+            sum+=nums[i];
+            if(sum>=k){
+                res = Math.min(res,i+1);
+            }
+            long v = sum-k;
+            Map.Entry<Long,Integer> key = map.floorEntry(v);
+            while(key!=null){
+                int in = key.getValue();
+                res = Math.min(res,i-in);
+                map.remove(key.getKey());
+                key = map.floorEntry(key.getKey()-1);
+            }
+            map.put(sum,i);
+        }
+        return res==Integer.MAX_VALUE?-1:res;
+    }
+}
+
+//TC: O(N)
+//SC: O(N)
+class Solution {
+    public int shortestSubarray(int[] nums, int k) {
+        int n = nums.length;
+        int res=Integer.MAX_VALUE;
+        long[] prefix = new long[n+1];
+        for(int i=0;i<n;i++){
+            prefix[i+1] = prefix[i] + nums[i];
+        }
+        Deque<Integer> dq = new ArrayDeque<>();
+        for(int i=0;i<n+1;i++){
+           while(!dq.isEmpty() && (prefix[i]-prefix[dq.peekFirst()]) >= k){
+               res = Math.min(res,i-dq.pollFirst());
+           }
+           while(!dq.isEmpty() && prefix[i]<=prefix[dq.peekLast()]){
+               dq.pollLast();
+           }
+           dq.add(i);
+        }
+        return res==Integer.MAX_VALUE?-1:res;
+    }
+}
