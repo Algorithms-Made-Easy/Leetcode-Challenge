@@ -1,0 +1,63 @@
+class Solution {
+    public int[] getOrder(int[][] tasks) {
+        //How to store the tasks
+        //Task(index, startTime, processingTime)
+        //Sort : StartTime ==> processingTime
+
+        int n = tasks.length;
+        Task[] t = new Task[n];
+        for(int i = 0; i < n; i++) {
+            t[i] = new Task(i, tasks[i][0], tasks[i][1]);
+        }
+
+        Arrays.sort(t, (a,b) -> a.startTime == b.startTime ? a.processingTime- b.processingTime : a.startTime - b.startTime);
+
+
+        //How to pick the task
+        //Priority Queue
+        //Sorting => ProcessingTime (asc) ==> index (asc)
+
+        PriorityQueue<Task> waitingTasks = new PriorityQueue<>((a,b) -> a.processingTime == b.processingTime ? a.index-b.index : a.processingTime - b.processingTime);
+
+        int[] result = new int[n];
+        int index = 0, resIndex = 0;
+        int endTime = 0;
+
+        while(index < n) {
+            if(waitingTasks.size() > 0) {
+                //Calculate new EndTime and process one task
+                //Pick the next Task, calculte the new endTime, Fill the waitingTasks Queue
+                Task currentTask = waitingTasks.remove();
+                endTime = Math.max(currentTask.startTime, endTime) + currentTask.processingTime;
+                result[resIndex++] = currentTask.index;
+
+                while(index < n && endTime >= t[index].startTime) {
+                    waitingTasks.add(t[index++]);
+                }
+            }
+            else {
+                //Add a task in waitingTasks List
+                waitingTasks.add(t[index++]);
+            }
+        }
+
+        while(waitingTasks.size() > 0) {
+            Task task = waitingTasks.remove();
+            result[resIndex++] = task.index;
+        }
+
+        return result;
+    }
+
+    class Task {
+        int index;
+        int startTime;
+        int processingTime;
+
+        Task(int index, int startTime, int processingTime) {
+            this.index = index;
+            this.startTime= startTime;
+            this.processingTime = processingTime;
+        }
+    }
+}
