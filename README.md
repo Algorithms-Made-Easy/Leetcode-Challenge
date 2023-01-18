@@ -17,6 +17,7 @@ Number | Name of Problem | Leetcode Link | Video Link | Code
 1834 | Single-Threaded CPU | https://leetcode.com/problems/single-threaded-cpu/ | https://youtu.be/6104EJTG_T4 | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/1834.%20Single-Threaded%20CPU
 1871 | Jump Game VII | https://leetcode.com/problems/jump-game-vii/ | https://youtu.be/bZxWLuiqHes | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/1871.%20Jump%20Game%20VII
 2375 | Construct Smallest Number From DI String | https://leetcode.com/problems/construct-smallest-number-from-di-string/ | https://youtu.be/GEqSg0Otq4Y | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/2375.%20Construct%20Smallest%20Number%20From%20DI%20String
+2531 | Make Number of Distinct Characters Equal | https://leetcode.com/problems/make-number-of-distinct-characters-equal/description/ | https://youtu.be/GwWmlpIEIwc | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/2531.%20Make%20Number%20of%20Distinct%20Characters%20Equal
 
 
 # Leetcode-Challenge
