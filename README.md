@@ -7,6 +7,7 @@ Number | Name of Problem | Leetcode Link | Video Link | Code
 121 | Best Time to Buy and Sell Stock | https://leetcode.com/problems/best-time-to-buy-and-sell-stock/ | https://youtu.be/5skEWekmJ2w | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/121.%20Best%20Time%20to%20Buy%20and%20Sell%20Stock
 134 | Gas Station | https://leetcode.com/problems/gas-station/ | https://youtu.be/3wUa7Lf1Xjk | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/134.%20Gas%20Station
 198 | House Robber | https://leetcode.com/problems/house-robber/ | https://youtu.be/YEEQRP2ZFxk | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/198.%20House%20Robber
+206 | Reverse Linked List | https://leetcode.com/problems/reverse-linked-list/description/ | https://youtu.be/rzXJe1xMHLc | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/206.%20Reverse%20Linked%20List
 213 | House Robber II | https://leetcode.com/problems/house-robber-ii/ | https://youtu.be/5bxF0MJ1oM0 | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/213.%20House%20Robber%20II
 337 | House Robber III | https://leetcode.com/problems/house-robber-iii/ | https://youtu.be/FRP5l83XoZo | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/337.%20House%20Robber%20III
 403 | Frog jump | https://leetcode.com/problems/frog-jump/ | https://youtu.be/3FYCPlIx3YA | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/403.%20Frog%20Jump
