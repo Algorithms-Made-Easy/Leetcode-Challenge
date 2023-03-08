@@ -1,0 +1,37 @@
+class Solution {
+    public int[] shortestAlternatingPaths(int n, int[][] redEdges, int[][] blueEdges) {
+        List[] adj = new ArrayList[n];
+        for(int i=0;i<n;i++){
+            adj[i] = new ArrayList<>();
+        }
+        for(int[] red:redEdges){
+            adj[red[0]].add(new int[]{red[1],0});
+        }
+        for(int[] blue:blueEdges){
+            adj[blue[0]].add(new int[]{blue[1],1});
+        }
+
+        Queue<int[]> queue = new LinkedList<>();
+        int[] res = new int[n];
+        Arrays.fill(res,-1);
+        res[0]=0;
+        boolean[][] v = new boolean[n][2];
+
+        queue.add(new int[]{0,0,-1}); //currentPos,distance,color
+
+        while(queue.size()>0){
+            int[] prev = queue.remove();
+            List<int[]> nodes = adj[prev[0]];
+            for(int[] next:nodes){
+                if(!v[next[0]][next[1]] && next[1]!=prev[2]){
+                    if(res[next[0]]==-1){
+                        res[next[0]]=prev[1] + 1;
+                    }
+                    v[next[0]][next[1]] = true;
+                    queue.add(new int[]{next[0],prev[1]+1,next[1]});
+                }
+            }
+        }
+        return res;
+    }
+}
