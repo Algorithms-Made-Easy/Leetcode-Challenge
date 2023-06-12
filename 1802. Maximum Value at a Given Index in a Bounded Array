@@ -43,3 +43,59 @@ class Solution {
         return (maxSum<0) ? res-1 : res;
     }
 }
+
+//Binary Search 
+
+class Solution {
+    public int maxValue(int n, int index, int maxSum) {
+        //Binary Search code
+        if(n == 1) return maxSum;
+
+        int left = 1, right = maxSum;
+        while(left < right) {
+            int mid = left + (right-left)/2;
+            long sum = calculateSumOfArray(mid, index, n);
+
+            if(sum <= maxSum) {
+                left = mid+1;
+            }
+            else {
+                right = mid;
+            }
+        }
+
+        return left-1;
+    }
+
+    //Calculate the Sum of array
+    private long calculateSumOfArray(int v, int i, int n){
+        long sum = 0;
+        if(v <= i){
+            int a = i+1-v;
+            sum+=summation(v-1) + a;
+        }
+        else {
+            int x = v-i;
+            sum+= summation(v-1) - summation(x-1);
+        }
+
+
+        if(v <= n-i){
+            int b = n-i-v;
+            sum+=summation(v-1) + b;
+        }
+        else {
+            int y = v-(n-i-1);
+            sum+= summation(v-1) - summation(y-1);
+        }
+
+        return sum+v;
+
+    }
+
+    //Utility method to apply summation formula
+    private long summation(int n) {
+        return (long)(n+1)*n/2;
+    }
+
+}
