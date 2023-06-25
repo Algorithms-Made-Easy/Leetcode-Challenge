@@ -26,6 +26,7 @@ Number | Name of Problem | Leetcode Link | Video Link | Code
 2375 | Construct Smallest Number From DI String | https://leetcode.com/problems/construct-smallest-number-from-di-string/ | https://youtu.be/GEqSg0Otq4Y | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/2375.%20Construct%20Smallest%20Number%20From%20DI%20String
 2531 | Make Number of Distinct Characters Equal | https://leetcode.com/problems/make-number-of-distinct-characters-equal/description/ | https://youtu.be/GwWmlpIEIwc | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/2531.%20Make%20Number%20of%20Distinct%20Characters%20Equal
 2657 | Find the Prefix Common Array of Two Arrays | https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/description/ | https://youtu.be/m6s9dBCBocQ | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/2657.%20Find%20the%20Prefix%20Common%20Array%20of%20Two%20Arrays
+530 | Minimum Absolute Difference in BST | https://leetcode.com/problems/minimum-absolute-difference-in-bst/description/ | https://youtu.be/uDykjVZ5s4o | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/530.%20Minimum%20Absolute%20Difference%20in%20BST 
 
 # Leetcode-Challenge
 
