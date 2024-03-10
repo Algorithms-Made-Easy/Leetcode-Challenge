@@ -1,0 +1,51 @@
+class Solution {
+    int[][] dp=null;
+    public int maxValue(int[][] events, int k) {
+        int n = events.length;
+        dp = new int[n][k+1];
+        for(int[] d:dp){
+            Arrays.fill(d,-1);
+        }
+        if(k == 1) {
+            for(int[] event : events) {
+                max = Math.max(event[2], max);
+            }
+            return max;
+        }
+        
+        Arrays.sort(events,(a,b) -> a[0]==b[0]?a[1]-b[1]:a[0]-b[0]);
+
+        return helper(events,0,k,n); //o(N*K) * O(logN)
+    }
+
+    int helper(int[][] events,int pos,int k,int n){
+        if(pos>=n || k==0){
+            return 0;
+        }
+
+        if(dp[pos][k]>-1){
+            return dp[pos][k];
+        }
+        
+        int nextPos = nextEvent(events,pos,n); // O(logN)
+        int select = events[pos][2] + helper(events,nextPos,k-1,n); 
+        int reject = helper(events,pos+1,k,n);
+        dp[pos][k]= Math.max(select,reject);
+        return dp[pos][k];
+    }
+
+    int nextEvent(int[][] events,int pos, int n){
+        int endDay = events[pos][1];
+        pos++;
+        while(pos<n){
+            int mid = pos + (n-pos)/2;
+            if(events[mid][0]>endDay){
+                n =mid;
+            }
+            else{
+                pos = mid+1;
+            }
+        }
+        return n;
+    }
+}
