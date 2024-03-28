@@ -30,6 +30,7 @@ Number | Name of Problem | Leetcode Link | Video Link | Code
 2328 | Number of Increasing Paths in a Grid | https://leetcode.com/problems/number-of-increasing-paths-in-a-grid/description/ | https://youtu.be/kPAv1t2uBjg | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/2328.%20Number%20of%20Increasing%20Paths%20in%20a%20Grid
 2375 | Construct Smallest Number From DI String | https://leetcode.com/problems/construct-smallest-number-from-di-string/ | https://youtu.be/GEqSg0Otq4Y | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/2375.%20Construct%20Smallest%20Number%20From%20DI%20String
 2531 | Make Number of Distinct Characters Equal | https://leetcode.com/problems/make-number-of-distinct-characters-equal/description/ | https://youtu.be/GwWmlpIEIwc | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/2531.%20Make%20Number%20of%20Distinct%20Characters%20Equal
+2598 | Length Of Longest Subarray with at most K Frequency | https://leetcode.com/problems/length-of-longest-subarray-with-at-most-k-frequency/ | https://youtu.be/GwWmlpIEIwc | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/2598.%20Length%20Of%20Longest%20Subarray%20with%20at%20most%20K%20Frequency
 2657 | Find the Prefix Common Array of Two Arrays | https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/description/ | https://youtu.be/m6s9dBCBocQ | https://github.com/Algorithms-Made-Easy/Leetcode-Challenge/blob/main/2657.%20Find%20the%20Prefix%20Common%20Array%20of%20Two%20Arrays
 
 # Leetcode-Challenge
