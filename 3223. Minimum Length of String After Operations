@@ -1,0 +1,14 @@
+class Solution {
+    public int minimumLength(String s) {
+        char[] ch = s.toCharArray();
+        int[] count = new int[26];
+        for(char c:ch){
+            count[c-'a']++;
+        }
+        int result = 0;
+        for(int ct: count){
+            if(ct>0) result+=(ct%2==0?2:1);
+        }
+        return result;
+    }
+}
