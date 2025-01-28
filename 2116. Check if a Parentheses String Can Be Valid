@@ -1,0 +1,36 @@
+class Solution {
+    public boolean canBeValid(String s, String locked) {
+        if(s.length()%2!=0) return false;
+        Stack<Integer> unlocked = new Stack<>();
+        Stack<Integer> open = new Stack<>();
+        char[] stArray = s.toCharArray();
+        char[] lArray = locked.toCharArray();
+
+        for(int i=0;i<lArray.length;i++){
+            if(lArray[i]=='0'){
+                unlocked.push(i);
+            }
+            else if(stArray[i]=='('){
+                open.push(i);
+            }
+            else{
+                if(open.size()>0){
+                    open.pop();
+                }
+                else if(unlocked.size()>0){
+                    unlocked.pop();
+                }
+                else{
+                    return false;
+                }
+            }
+        }
+
+        while(open.size()>0 && unlocked.size()>0 && open.peek()<unlocked.peek()){
+            open.pop();
+            unlocked.pop();
+        }
+        
+        return open.size()==0;
+    }
+}
